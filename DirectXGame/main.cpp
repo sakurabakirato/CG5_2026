@@ -104,6 +104,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int)
 			DebugText::GetInstance()->ConsolePrintf(reinterpret_cast<char*>(errorBlob->GetBufferPointer()));
 		}
 		assert(false);
+		return 0; 
 	}
 
 	//PSO(PipelineStateObject)の生成 -------------
