@@ -11,7 +11,7 @@ class Shader
 public:
 
 	//シェーダーファイルを読み込み、コンパイル済みデータを生成する
-	void Load(const std::wstring& filePath, const std::string& shaderModel);
+	void Load(const std::wstring& filePath, const std::wstring& shaderModel);
 
 	void LoadDxc(const std::wstring& filePath, const std::wstring& shaderModel);
 
