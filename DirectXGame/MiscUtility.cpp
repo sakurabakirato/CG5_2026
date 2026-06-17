@@ -19,7 +19,6 @@ std::wstring ConvertString(const std::string& str)
 	return result;
 }
 
-
 // wstring => string 文字列変換
 std::string ConvertString(const std::wstring& str) 
 {
