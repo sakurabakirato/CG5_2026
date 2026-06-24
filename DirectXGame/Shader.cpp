@@ -1,4 +1,5 @@
 #include "Shader.h"
+#include "MiscUtility.h"
 #include <d3dcompiler.h>
 #include <dxcapi.h>
 #include <cassert>
@@ -11,7 +12,7 @@ void Shader::Load(const std::wstring& filePath, const std::wstring& shaderModel)
 	ID3DBlob* errorBlob = nullptr;
 
 	//wstring => string 文字列変換
-	std::string mbShaderModel = std::string(shaderModel.begin(), shaderModel.end());
+	std::string mbShaderModel = ConvertString(shaderModel);
 
 	HRESULT hr =
 	    D3DCompileFromFile(
